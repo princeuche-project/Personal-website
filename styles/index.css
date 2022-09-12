@@ -1,0 +1,362 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1600px;
+    background-color: white;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    font-family: Tiro Tamil, serif;
+
+}
+
+/*the header design*/
+header nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0096c7;
+    top: 0;
+    width: 100%;
+}
+
+header nav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.active {
+    background-color: #fbb13c;
+}
+nav a:hover {
+    background-color: #fbb13c;
+    color: #073b4c;
+}
+
+/* the home images design*/
+#home-img-main {
+    background-image: url(boutique3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#home-img img {
+    width: 350px;
+    height: 300px;
+}
+
+/* the logo design*/
+#logo-link {
+    padding-bottom: 20px;
+    justify-self: center;
+    align-self: center;
+    position: absolute;
+    z-index: 1;
+}
+
+.logo {
+    width: 60px;
+    border: 4px solid #fbb13c;
+    overflow: hidden;
+    top: 0;
+}
+
+/* the home msg design*/
+.home-msg {
+    display: grid;
+    grid-template-columns: 150px 3fr;
+    grid-template-rows: 150px 150px;
+}
+.home-msg h1,
+.text {
+    color: #073b4c;
+    font-size: 2em;
+    grid-column: 3/3;
+    align-items: end;
+    position: relative;
+    right: 300px;
+    bottom: 100px;
+    text-shadow: 5px 5px #fbb13c;
+}
+/*designing the paragraph*/
+#paragraph .item-1 {
+    float: right;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+#paragraph .main-content{
+    padding: 25px;
+    
+    
+    font-style: oblique;
+    font-size: 1em;
+}
+.item-text{
+    color: white;
+    background: #073b4c;
+    text-align: center;
+    box-shadow: #fbb13c 10px 10px 15px;
+}
+
+#paragraph .item-1 img {
+    width: 300px;
+}
+
+#paragraph ul {
+    display: grid;
+    justify-content: end;
+    padding-right: 100px;
+    margin-right:  auto;
+    color: #fbb13c;
+    background-color: #073b4c
+}
+#paragraph .card {
+    display: grid;
+    justify-items: start;
+    position: relative;
+    bottom: 170px;
+    left: 50px;
+    padding: 50px;
+}
+#paragraph .card img {
+    width: 300px;
+}
+#paragraph .item-1 button,
+#paragraph .card button {
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #073b4c;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 13px;
+}
+#paragraph .card button:hover,
+.item-1 button:hover {
+    color: white;
+    opacity: 0.6;
+}
+#img-grid {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px 150px;
+    margin-bottom: 50px;
+    position: relative;
+   
+}
+.card-1 {
+    grid-column: 2/3;
+    position: relative;
+    top: 100px;
+    padding: 15px;
+    right: 70px;
+}
+.card-2 {
+    grid-column: 4/5;
+    position: relative;
+    top: 100px;
+    padding: 15px;
+    right: 70px;
+}
+
+.card-3 {
+    grid-column: 6/8;
+    position: relative;
+    top: 100px;
+    padding: 15px;
+    right: 70px;
+}
+.card-4 {
+    grid-column: 8/10;
+    width: 230px;
+    position: relative;
+    top: 100px;
+    padding: 15px;}
+.card-5 {
+    grid-column: 10/13;
+    position: relative;
+    top: 100px;
+    padding: 15px;
+}
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5 {
+    max-width: 300px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    width: 150px;
+    height: 100px;
+    
+}
+.card-1 button,
+.card-2 button,
+.card-3 button,
+.card-4 button,
+.card-5 button {
+    outline: 0;
+    padding: 12px;
+    color: #fbb13c;
+    background-color: #073b4c;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 13px;
+}
+
+.card-1 button:hover,
+.card-2 button:hover,
+.card-3 button:hover,
+.card-4 button:hover,
+.card-5 button:hover {
+    opacity: 0.7;
+}
+
+.card-1:hover,
+.card-2:hover,
+.card-3:hover,
+.card-4:hover,
+.card-5:hover {
+    opacity: 0.7;
+}
+footer {
+    
+    background-color: #073b4c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+footer p {
+    color: #fbb13c
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+footer a:hover {
+    background-color: #fbb13c;
+    color: #0096c7;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+footer .social img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 900px) {
+
+
+    #img-grid {
+        display: block;
+        height: auto;
+        width: 50%;
+        margin: 450px auto;
+        position: relative;
+        bottom: 300px;
+        padding: 100px;
+        
+    }
+
+
+    nav {
+        flex-direction: column;
+        overflow: hidden;
+        top: 0;
+        width: 100%;
+
+    }
+
+    .card-1 {
+        position: relative;
+        margin-bottom:  100px;
+        width: 100%;
+        left: 40px;
+        display: inline-table;    
+    }
+
+    .card-2 {
+        position: relative;
+        width: 100%;
+        left: 20px;
+        padding-bottom: 200px;
+    }
+
+    .card-3 {
+        position: relative;
+        top: 350px;
+        left: 40px;
+    }
+
+    .card-4 {
+        position: relative;
+        top: 350px;
+    }
+
+    .card-5 {
+        position: relative;
+        top: 450px;
+        
+    }
+
+    footer {
+        flex-direction: column;
+        margin-top: 25px;
+
+    }
+
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    .home-msg{
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 80%;
+        font-style: italic;
+    }
+    #paragraph .card{
+        position: relative;
+        bottom: 20%;
+        width: 50%;
+    }
+    #paragraph ul{
+        display: inline-block;
+        padding: 50px;
+    }
+    #paragraph .main-content{
+        padding: 25px;
+        background: #073b4c;
+        color: white;
+        font-style: oblique;
+        font-size: 1em;
+    }
+    .item-1 h3, p{
+        color: #fbb13c;
+
+    }
+
+
+
+}
