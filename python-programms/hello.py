@@ -13,3 +13,4 @@ print(country_capital)
 daily_activities = input("please tell us your daily activities:")
 print("your daily activities are:")
 print(daily_activities)
+
