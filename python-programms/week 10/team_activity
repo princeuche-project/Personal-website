@@ -1,0 +1,171 @@
+account_names = []
+account_balances = []
+name = ''
+balance = 0
+total_balance = 0
+largest_balance = -1
+largest_name = ''
+
+print("\nEnter the names and balances of bank accounts (type 'quit' when done)")
+while name.lower() != 'quit':
+    name = input('What is the name of this account? ')
+    if name.lower() != 'quit':
+        balance = float(input('What is the balance? '))
+        account_names.append(name.capitalize())
+        account_balances.append(balance)
+
+print('\nAccount Information:')
+for i in range(len(account_balances)):
+    balance = account_balances[i]
+    name = account_names[i]
+    print(f'{i}. {name} - ${balance:.2f}')
+
+for balance in account_balances:
+    total_balance += balance
+print(f'\nTotal: ${total_balance:.2f}')
+print(f'Average: ${total_balance / len(account_balances):.2f}')
+
+for i in range(len(account_names)):
+    balance = account_balances[i]
+    name = account_names[i]
+    if balance > largest_balance:
+        largest_balance = balance
+        largest_name = name
+print(f'Highest balance: {largest_name} - ${largest_balance:.2f}')
+
+print()
+update = 'yes'
+
+while update.lower() == 'yes':
+    update = input('Do you want to update an account? ')
+    if update.lower() == 'yes':
+        index = int(input('Which index do you want to update? '))
+        balance = float(input('What is the new amount? '))
+        account_balances[index] = balance
+    print('\nAccount Information:')
+    for i in range(len(account_balances)):
+        balance = account_balances[i]
+        name = account_names[i]
+        print(f'{i}. {name} - ${balance:.2f}')
+print()
+
+
+
+#core requirements
+#requirement 1
+print("Enter the names and account_balances of bank accounts. Type quit when you're done.")
+names = []
+balances = []
+
+account_name = ""
+account_balance = ""
+
+total_balance = 0
+
+while account_name != "quit":
+    account_name = input("What is the name of this account? ")
+    if account_name != "quit":
+        account_balance = float(input("What is its balance? $"))
+        names.append(account_name)
+        balances.append(account_balance)
+        total_balance += account_balance
+
+#requirement 2 (and part of challenge 2)
+print()
+print("Account Information:")
+for i in range(len(names)):
+    name = names[i]
+    balance = balances[i]
+
+    print(f"{i}. {name} - ${balance:.2f}")
+
+average = (total_balance / len(balances))
+
+#requirement 3
+print()
+print(f"Total: ${total_balance:.2f}")
+print(f"Average: ${average:.2f}")
+
+
+#stretch challenge
+#challenge 1
+highest_index = balances.index(max(balances)) #gets the position of the greatest amount in balances
+
+highest_account = names[highest_index] #assigns that same position, but in names
+
+print(f"Highest balance: {highest_account} - ${max(balances)}")
+
+
+#challenge 2 (and challenge 3)
+update = "yes"
+
+while update == "yes":
+    print()
+    update = input("Do you want to update an account (yes or no)? ").lower()
+
+    if update == "yes":
+        new_index = int(input("What account index do you want to update? "))
+        new_amount = float(input("What is the new amount? $"))
+        
+        balances[new_index] = new_amount
+
+    print()
+    print("Account Information:")
+    for i in range(len(names)):
+        name = names[i]
+        balance = balances[i]
+
+        print(f"{i}. {name} - ${balance:.2f}")
+
+
+accounts = []
+balances = []
+account = ''
+balance = None
+total = 0
+
+print('Enter the names and balances of bank accounts (type: quit when done)')
+
+while account.lower() != 'quit':
+    account = input('What is the name of this account? ')
+    if account.lower() != 'quit':
+        accounts.append(account)
+        balance = float(input('What is the balance? '))
+        balances.append(balance)
+        total += balance
+
+print()
+print('Account Information:')
+
+for i in range(len(accounts)):
+    print(f'{i}. {accounts[i]} - ${balances[i]:.2f}')
+
+print()
+print(f'Total: ${total:.2f}')
+print(f'Average: ${total / len(accounts):.2f}')
+    
+highest_balance = -1
+highest_account = ''
+
+for j in range(len(accounts)):
+    balance1 = balances[j]
+    account1 = accounts[j]
+    if balance1 > highest_balance:
+        highest_balance = balance1
+        highest_account = account1
+
+print(f'Highest balance: {highest_account} - ${highest_balance:.2f}')
+
+update = ''
+new_amount = 0
+
+while update.lower() != 'no':
+    update = input('\nDo you want to update an account? ')
+    if update.lower() == 'yes':
+        index = int(input('Which account index do you want to update? '))
+        new_amount = float(input('What is the new amount? '))
+        balances[index] = new_amount
+
+    print('\nAccount Information:')
+    for i in range(len(accounts)):
+        print(f'{i}. {accounts[i]} - ${balances[i]:.2f}')

@@ -1,0 +1,12 @@
+22-11-16, 204.0, 85.0, 72.0, 222.50
+width of the tire: 204.0
+aspect ratio of the tire: 85.0
+diameter of the wheel: 72.0
+volume of the tire: 222.50
+The customer phone number is: 5454545454
+22-12-19, 204.0, 60.0, 16.0, 41.48
+width of the tire: 204.0
+aspect ratio of the tire: 60.0
+diameter of the wheel: 16.0
+volume of the tire: 41.48
+The customer phone number is: 563839728
