@@ -594,6 +594,12 @@ main .recent-orders a {
     main .recent-orders table {
         width: 83vw;
     }
+    .recent-updates h1{
+        display: inline-flex;
+       margin-bottom: 0.8rem; 
+        color: #181a1e;
+
+    }
 
 }
 
@@ -666,6 +672,12 @@ main .recent-orders a {
         margin-right: 12rem;
         position: relative;
         right:  14.5rem;
+    }
+    .recent-updates h1{
+        display: inline-flex;
+       margin-bottom: 0.8rem; 
+        color: #181a1e;
+
     }
     .right {
         width: 95%;
