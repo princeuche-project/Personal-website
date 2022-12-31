@@ -600,6 +600,13 @@ main .recent-orders a {
         color: #181a1e;
 
     }
+    main .date input {
+        background: var(--color-dark-variant);
+        display: inline-block;
+        color: azure;
+        border-radius: var(--border-radius-1);
+        margin-top: 0.5rem;
+    }
 
 }
 
@@ -711,6 +718,12 @@ main .recent-orders a {
         cursor: pointer;
         
     }
-    
+    main .date input {
+        background: var(--color-dark-variant);
+        display: inline-block;
+        color: azure;
+        border-radius: var(--border-radius-1);
+        margin-top: 0.5rem;
+    }
 
 }
